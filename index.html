@@ -7,23 +7,25 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1>Simon Game</h1>
-<div id="controls">
-    <label for="strict-mode">Strict Mode</label>
-    <input type="checkbox" id="strict-mode" onchange="toggleStrictMode()">
+<h1>САЙМОН КАЖЕ</h1>
+
+<div id="controls"> <!-- контейнер для управління -->
+    <label for="strict-mode">Строгий режим</label>
+    <input type="checkbox" id="strict-mode" onchange="toggleStrictMode()"> <!-- вмк/вимк строгого режиму -->
 </div>
 
-<div id="simon-board">
+<div id="simon-board"> <!-- контейнер для кнопок -->
     <button class="simon-btn top-left" onclick="handleClick(this)" data-color="1" disabled></button>
     <button class="simon-btn top-right" onclick="handleClick(this)" data-color="2" disabled></button>
     <button class="simon-btn bottom-left" onclick="handleClick(this)" data-color="3" disabled></button>
     <button class="simon-btn bottom-right" onclick="handleClick(this)" data-color="4" disabled></button>
 </div>
 
-<div id="level">
-    <span>Level: <span class="level-count">-</span></span>
+<div id="level"> <!-- контейнер для відображення рівня -->
+    <span>Level: <span class="level-count">??</span></span> <!-- поточний рівень -->
 </div>
-<button id="power-btn" onclick="togglePower()">Start</button>
+
+<button id="power-btn" onclick="togglePower()">Старт</button> <!-- початок гри -->
 
 <script src="index.js"></script>
 </body>
